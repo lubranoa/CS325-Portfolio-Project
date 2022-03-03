@@ -1,6 +1,7 @@
 # -----------------------------------------------------------------------------
 # Author: Alexander Lubrano
 # Course: CS 325 - Analysis of Algorithms
+# Assignment 8: Puzzle.py
 # Date: 03/01/2022
 # Description: This BFS algorithm uses a priority queue and dynamic programming
 #     to allow a user to find the minimum number of cells that must be
@@ -34,6 +35,7 @@ def solve_puzzle(board, src, dest):
     :param src: 2-tuple coord. to source cell (src row, src column)
     :param dest: 2-tuple coord. to destination cell (dest row, dest column)
     :return: 2-tuple containing (min traversed cells: int, moves from src: str)
+        or None if no path was found
     """
 
     rows, cols = len(puzzle), len(puzzle[0])
